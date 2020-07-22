@@ -27,7 +27,7 @@ The designs were created to the following widths:
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap');
 
-font-family: 'Inter', sans-serif;
+
 
 
 

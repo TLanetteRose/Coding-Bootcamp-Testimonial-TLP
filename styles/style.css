@@ -5,6 +5,9 @@
     outline: 1px solid black;
 }
 
+body {
+    font-family: 'Inter', sans-serif;
+}
 
 
 /* Slideshow Styles */
