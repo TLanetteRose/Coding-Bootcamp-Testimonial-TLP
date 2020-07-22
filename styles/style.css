@@ -24,8 +24,15 @@ body {
 
 /* Hides slides by default */
 
+.slideshow__inner {
+    display: flex;
+    flex-direction: column;
+    
+}
+
 .slides {
     display: none;
+    margin-top: 250px;
 }
 
 .prev, .next {
@@ -54,7 +61,7 @@ body {
 }
 
 .slide__text {
-    color: #f2f2f2;
+    color: hsl(240, 38%, 20%);
     font-size: 15px;
     padding: 8px 12px;
     position: absolute;
