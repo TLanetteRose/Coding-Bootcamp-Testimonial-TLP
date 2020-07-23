@@ -13,6 +13,8 @@ body {
     width: 100%;
     font-family: 'Inter', sans-serif;
     font-size: 32px;
+    display: flex;
+    flex-direction: column;
 }
 
 h3, 
@@ -22,109 +24,28 @@ span {
 
 h3 {
     color: hsl(240, 38%, 20%);
-    font-weight: 700;
     font-size: 0.65em;
-
+    font-weight: 700;
 }
 
 span {
     color: hsl(240, 18%, 77%);
-    padding: 0em 1em;
     font-size: 0.45em;
+    padding: 0em 1em;
 }
 
-.page-bg {
-    z-index: -1;
-}
 
-.bg-svg {
-    position: absolute;
-    right: 10%;
-    top: 50%;
-    transform: translateY(-50%);
-    height: 85%;
-    width: auto;
-}
 
-.curve {
-    position: absolute;
+/* Slide Style */
+
+
+/* Footer Style */
+.footer {
     left: 0;
-    bottom: 0;
-    width: 35%;
-    height: auto;
-}
-
-.quotes {
-    position: absolute;
-    top: 25vh;
-    left: 25vh;
-    height: 15%;
-    width: auto;
-}
-
-/* Slideshow Styles */
-
-.slideshow__container {
-    position: relative;
-    max-width: 1000px;
-    margin: auto;
-}
-
-/* Hides slides by default */
-
-.slideshow__inner {
-    display: flex;
-    flex-direction: column;
-    margin-top: 250px;  
-}
-
-.slides {
-    display: none;  
-}
-
-.slide__buttons {
-    position: absolute;
-    top: 77%;
-    left: 60%;
-    z-index: 999;
-    background-color: white;
-    border-radius: 50px;
-    font-size: 18px;
-}
-
-.slide__buttons .button-container {
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.14);
-    border-radius: 50px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 4em;
-    height: 2em;
-    padding: 0.7em 0.5em;
-}
-
-.slide__buttons .button-container svg {
-    cursor: pointer;
-}
-
-/* Position next button to the right */
-.next {
     right: 0;
-    border-radius: 3px 0 0 3px;
-}
-
-.prev:hover, .next:hover {
-    background-color: hsl(240, 18%, 77%);
-}
-
-.slide__text {
-    color: hsl(240, 38%, 20%);
-    font-size: 15px;
-    padding: 8px 12px;
-    position: absolute;
-    bottom: 8px; 
-    width: 100%;
-    text-align: center;
+    bottom: 0;
+    padding: 20px;
+    flex-shrink: 0;
 }
 
 
