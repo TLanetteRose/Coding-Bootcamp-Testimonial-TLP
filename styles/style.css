@@ -48,9 +48,6 @@ span {
     padding: 2rem;
 }
 
-.slideshow__inner {
-    margin-top: 20px;
-}
 .testimonial {
     display: flex;
     height: 100%;
@@ -82,8 +79,8 @@ span {
 }
 
 .slide__image {
-    width: 305px;
-    height: 305px;
+    width: 35%;
+    height: 35%;
     z-index: 0;
     border-radius: 5px;
     position: relative;
@@ -96,12 +93,15 @@ span {
     width: 100px;
     display: flex;
     justify-content: space-between;
-    background: #fffffff;
+    background-color: #ffffff;
     padding: 1rem;
-    border-radius: 50%;
+    border-radius: 50px;
+    height: 50px;
+    margin-top: -55px;
+    margin-left: 66%;
     position: relative;
-    left: 300px;
-    bottom: 30px;
+    
+    
 }
 
 .slide__buttons svg {

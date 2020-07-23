@@ -13,7 +13,7 @@
 </head>
 <body>
   <div class="slideshow__container">
-    <div class="slideshow__inner" role="list">
+    <div role="list">
       <div class="slides slide__one fade">
         <div class="testimonial">
           <div class="text__container">
@@ -41,19 +41,17 @@
           <img class="slide__image" src="images/image-john.jpg" alt="John testimonial">
         </div><!-- .testimonial -->
       </div><!-- .slide__two -->
-    </div><!-- .slideshow__inner -->
+    </div><!-- list -->
 
 
       <!-- Next and previous buttons -->
       <div class="slide__buttons">
-        <div class="button-container">
-          <a class="prev" onclick='plusSlides(-1)'>
-            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="18">
+        <a class="prev" onclick='plusSlides(-1)'>
+          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="18">
             <path fill="none" stroke="#8585AC" stroke-width="3" d="M11 1L3 9l8 8" /></svg></a>
-          <a class="next" onclick='plusSlides(1)'>
-            <svg xmlns="http://www.w3.org/2000/svg" width="13" height="18">
+        <a class="next" onclick='plusSlides(1)'>
+          <svg xmlns="http://www.w3.org/2000/svg" width="13" height="18">
             <path fill="none" stroke="#8585AC" stroke-width="3" d="M2 1l8 8-8 8" /></svg></a>
-        </div><!-- .button-container -->
       </div><!-- . slide__buttons -->
 
   </div><!-- .slideshow__container -->
