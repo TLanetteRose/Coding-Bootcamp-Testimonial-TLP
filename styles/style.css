@@ -13,10 +13,6 @@ body {
     width: 100%;
     font-family: 'Inter', sans-serif;
     font-size: 32px;
-    background-image: url('/images/pattern-bg.svg');
-    background-repeat: no-repeat;
-    background-position: center;
-    
 }
 
 h3, 
@@ -37,6 +33,34 @@ span {
     font-size: 0.45em;
 }
 
+.page-bg {
+    z-index: -1;
+}
+
+.bg-svg {
+    position: absolute;
+    right: 10%;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 85%;
+    width: auto;
+}
+
+.curve {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 35%;
+    height: auto;
+}
+
+.quotes {
+    position: absolute;
+    top: 25vh;
+    left: 25vh;
+    height: 15%;
+    width: auto;
+}
 
 /* Slideshow Styles */
 
