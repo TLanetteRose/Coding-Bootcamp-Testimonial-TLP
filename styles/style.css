@@ -5,7 +5,7 @@
     padding: 0;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-    outline: 1px solid black;
+    /*outline: 1px solid black;*/
 }
 
 body {
@@ -15,6 +15,7 @@ body {
     font-size: 32px;
     display: flex;
     flex-direction: column;
+    background-color: hsl(240, 20%, 99%);
     
 }
 
@@ -40,12 +41,15 @@ span {
 /* Slide Style */
 
 .slideshow__container {
-    max-width: 100%;
+    max-width: 95%;
     height: 75vh;
     background: url(/images/pattern-curve.svg) no-repeat bottom left;
     margin: auto;
     position: relative;
     padding: 2rem;
+    background-color: #ffffff;
+    box-shadow: 5px 5px 30px hsl(240, 18%, 77%);
+    
 }
 
 .testimonial {
@@ -61,9 +65,9 @@ span {
 }
 
 .text__container {
-    /*display: flex;
-    flex-direction: column; */
-    width: 55%;
+    display: flex;
+    flex-direction: column; 
+    width: 58%;
     padding: 3.5rem;
     padding-right: 0;
     background: url(/images/pattern-quotes.svg) no-repeat;
@@ -108,8 +112,8 @@ span {
     margin-top: -55px;
     margin-left: 66%;
     position: relative;
-    
-    
+    box-shadow: 5px 5px 30px hsl(240, 18%, 77%);
+    cursor: pointer;
 }
 
 .slide__buttons svg {
@@ -136,4 +140,13 @@ span {
 
 .attribution a {
     color: hsl(228, 45%, 44%);
+}
+
+/* Media Queries */ 
+@media (max-width: 920px) {
+    .slideshow__container {
+        background-size: contain;
+    }
+    
+    
 }
