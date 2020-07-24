@@ -61,7 +61,11 @@ span {
     background: url(/images/pattern-bg.svg) no-repeat right;
     background-size: contain;
     transition: opacity .5s ease-in-out;
+    -webkit-transition: opacity .5s ease-in-out;
     -moz-transition: opacity .5s ease-in-out;
+    -ms-transition: opacity .5s ease-in-out;
+    -o-transition: opacity .5s ease-in-out;
+    
 }
 
 .text__container {
@@ -143,9 +147,29 @@ span {
 }
 
 /* Media Queries */ 
-@media (max-width: 920px) {
+@media (max-width: 940px) {
+    body {
+        font-size: 20px;
+    }
     .slideshow__container {
         background-size: contain;
+    }
+    .testimonial {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        background: none;
+    }
+    .text__container {
+        height: 50%;
+        width: 100%;
+        order: 2;
+        padding: 1rem;
+        background: url(/images/pattern-quotes.svg) no-repeat;
+        background-position-x: 50%;
+        background-size: 20%;
+        color: hsl(240, 38%, 20%);
+        font-weight: 300;
     }
     
     
