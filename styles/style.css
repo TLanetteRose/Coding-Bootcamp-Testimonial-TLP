@@ -1,4 +1,4 @@
-/* Mobil First Design */
+/* Mobile First Design */
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap');
 
@@ -8,7 +8,7 @@
     padding: 0;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-    outline: 1px solid black;
+    /*outline: 1px solid black;*/
 }
 
 body {
@@ -117,8 +117,9 @@ span {
     border-radius: 50px;
     position: absolute;
     z-index: 999;
-    top: 350px;
-    left: 43%;
+    top: 35vh;
+    left: 45%;
+    bottom: 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -152,25 +153,27 @@ span {
 
 /* Media Queries min-width 768px */ 
 
-@media screen and (min-width: 768px){
+@media screen and (min-width: 1300px){
     .slideshow__container {
         max-width: 95%;
-        height: 75vh;
+        height: 85vh;
         background: url(/images/pattern-curve.svg) no-repeat bottom left;
         margin: auto;
         position: relative;
-        padding: 2rem;
+        padding: 1rem;
         background-color: #ffffff;
         box-shadow: 5px 5px 30px hsl(240, 18%, 77%);
 
     }
     .testimonial {
+        background: url(/images/pattern-bg.svg) no-repeat right/35%;
         display: flex;
         flex-direction: row;
+        margin: auto;
         height: 100%;
         align-items: center;
         justify-content: center;
-        padding: 3rem;
+        padding: 4rem;
         transition: opacity .5s ease-in-out;
         -moz-transition: opacity .5s ease-in-out;
     }
@@ -185,21 +188,58 @@ span {
         background-position-x: 280px;
         color: hsl(240, 38%, 20%);
     }
+    .slide__text {
+        font-size: 28px;
+        position: relative;
+        z-index: 1;
+        font-weight: 300;
+        width: 95%;
+        right: -130px;
+        text-align: left;
+    }
+    .slide__credit {
+        flex-direction: row;
+        justify-content: flex-start;
+        right: -130px;
+        position: relative;
+    }
+    h3 {
+        margin-right: 20px;
+    }
     .slide__image {
         order: 2;
-        width: 40%;
-        height: 40%;
+        width: 30%;
+        height: 30%;
         border-radius: 5px;
         position: relative;
-        right: -30px;
+        right: 20px;
+        left: 50px;
         top: 10px;
         background: transparent;
         
     }
     .sl-image {
-        width: 90%;
-        height: 90%;
+        width: 100%;
+        height: 100%;
         z-index: 0;
     }
+    .slide__buttons {
+        top: 50vh;
+        left: 70%;
+    }
 
+}
+
+@media screen and (max-width: 625px) {
+    .slide__text {
+        font-size: 1rem;
+        text-align: center;
+        padding: 1rem 0;
+    }
+    h3 {
+        font-size: 0.85rem;
+    }
+    span {
+        font-size: 0.80rem;
+    }
 }
