@@ -151,6 +151,25 @@ span {
     color: hsl(228, 45%, 44%);
 }
 
+/* Fading Animation */
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 2.5s;
+    animation-name: fade;
+    animation-duration: 2.5s;
+}
+
+@-webkit-keyframes fade {
+    from {opacity: .2}
+    to {opacity: 1}
+}
+
+@keyframes fade {
+    from {opacity: .2}
+    to {opacity: 1}
+}
+
 /* Media Queries min-width 768px */ 
 
 @media screen and (min-width: 1300px){
