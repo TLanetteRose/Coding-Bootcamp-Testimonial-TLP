@@ -23,3 +23,20 @@ function showSlides(n) {
     slides[slideIndex-1].style.display = "block";
     
 }
+
+document.onkeydown = function(e) {
+    switch (e.keyCode) {
+        case 37: 
+        //prev
+        e.preventDefault();
+        slideIndex--;
+        showSlides(slideIndex);
+        break;
+        case 39: 
+        //next 
+        e.preventDefault();
+        slideIndex++;
+        showSlides(slideIndex);
+        break;
+    }
+}
