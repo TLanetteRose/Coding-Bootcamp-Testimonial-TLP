@@ -117,8 +117,9 @@ span {
     border-radius: 50px;
     position: absolute;
     z-index: 999;
-    top: 350px;
-    left: 43%;
+    top: 35vh;
+    left: 45%;
+    bottom: 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -152,7 +153,7 @@ span {
 
 /* Media Queries min-width 768px */ 
 
-@media screen and (min-width: 768px){
+@media screen and (min-width: 1300px){
     .slideshow__container {
         max-width: 95%;
         height: 75vh;
@@ -165,6 +166,7 @@ span {
 
     }
     .testimonial {
+        background: url(/images/pattern-bg.svg) no-repeat right;
         display: flex;
         flex-direction: row;
         height: 100%;
@@ -185,21 +187,50 @@ span {
         background-position-x: 280px;
         color: hsl(240, 38%, 20%);
     }
+    .slide__text {
+        font-size: 28px;
+        position: relative;
+        z-index: 1;
+        font-weight: 300;
+        width: 95%;
+        right: -130px;
+        text-align: left;
+    }
+    .slide__credit {
+        flex-direction: row;
+        justify-content: flex-start;
+        right: -130px;
+        position: relative;
+    }
+    h3 {
+        margin-right: 20px;
+    }
     .slide__image {
         order: 2;
         width: 40%;
         height: 40%;
         border-radius: 5px;
         position: relative;
-        right: -30px;
-        top: 10px;
+        right: 20px;
+        top: -10px;
         background: transparent;
         
     }
     .sl-image {
-        width: 90%;
-        height: 90%;
+        width: 100%;
+        height: 100%;
         z-index: 0;
     }
+    .slide__buttons {
+        top: 75%;
+        left: 60%;
+    }
 
+}
+
+@media screen and (min-width: 1440){
+    .slide__buttons {
+        top: 100%;
+        left: 60%;
+    }
 }
