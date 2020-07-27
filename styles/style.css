@@ -41,7 +41,7 @@ span {
 /* Slide Style */
 .slideshow__container {
     height: 100vh;
-    background: url(/images/pattern-curve.svg) no-repeat bottom left/65%;
+    background: url(../images/pattern-curve.svg) no-repeat bottom left/65%;
     margin: auto;
     position: relative;
     padding: 1rem;
@@ -66,7 +66,7 @@ span {
     width: 100%;
     margin-top: 0.5rem;
     padding: 2rem;
-    background: url(/images/pattern-quotes.svg) no-repeat;
+    background: url(../images/pattern-quotes.svg) no-repeat;
     background-position-x: 50%;
     background-position-y: 5%;
     background-size: 70px;
@@ -92,7 +92,7 @@ span {
 .slide__image {
     order: 1;
     position: relative;
-    background: url(/images/pattern-bg.svg) no-repeat center/65%;
+    background: url(../images/pattern-bg.svg) no-repeat center/65%;
     background-size: contain;
     display: flex;
     flex-direction: column;
@@ -176,7 +176,7 @@ span {
     .slideshow__container {
         max-width: 95%;
         height: 85vh;
-        background: url(/images/pattern-curve.svg) no-repeat bottom left;
+        background: url(../images/pattern-curve.svg) no-repeat bottom left;
         margin: auto;
         position: relative;
         padding: 1rem;
@@ -185,7 +185,7 @@ span {
 
     }
     .testimonial {
-        background: url(/images/pattern-bg.svg) no-repeat right/35%;
+        background: url(../images/pattern-bg.svg) no-repeat right/35%;
         display: flex;
         flex-direction: row;
         margin: auto;
@@ -203,7 +203,7 @@ span {
         width: 58%;
         padding: 3.5rem;
         padding-right: 0;
-        background: url(/images/pattern-quotes.svg) no-repeat;
+        background: url(../images/pattern-quotes.svg) no-repeat;
         background-position-x: 280px;
         color: hsl(240, 38%, 20%);
     }
